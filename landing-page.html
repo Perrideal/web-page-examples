@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiMarca</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f4f7fb;
+      color: #1d1d1f;
+    }
+    a { text-decoration: none; }
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    header {
+      background: linear-gradient(135deg, #0f172a, #1e3a8a);
+      color: white;
+      padding: 20px 0;
+    }
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .nav-links {
+      display: flex;
+      gap: 20px;
+    }
+    .nav-links a {
+      color: white;
+      opacity: 0.9;
+    }
+    .btn {
+      display: inline-block;
+      padding: 12px 24px;
+      border-radius: 10px;
+      font-weight: bold;
+      transition: 0.3s ease;
+    }
+    .btn-primary {
+      background: #f59e0b;
+      color: #111827;
+    }
+    .btn-secondary {
+      background: white;
+      color: #0f172a;
+    }
+    .hero {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 40px;
+      padding: 80px 0;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      line-height: 1.1;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.7;
+      max-width: 600px;
+      opacity: 0.9;
+    }
+    .hero-buttons {
+      margin-top: 30px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+    .hero-card {
+      background: white;
+      border-radius: 20px;
+      padding: 25px;
+      box-shadow: 0 20px 40px rgba(15, 23, 42, 0.15);
+      min-width: 260px;
+    }
+    .stat {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #1d4ed8;
+    }
+    .features {
+      padding: 80px 0;
+      text-align: center;
+    }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .feature {
+      background: white;
+      border-radius: 18px;
+      padding: 30px 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+    }
+    .feature h3 {
+      margin-top: 15px;
+      margin-bottom: 10px;
+    }
+    .pricing {
+      padding: 80px 0;
+      background: #e2e8f0;
+    }
+    .pricing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      margin-top: 40px;
+    }
+    .price-card {
+      background: white;
+      border-radius: 20px;
+      padding: 30px 20px;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.06);
+    }
+    .price-card.featured {
+      background: #0f172a;
+      color: white;
+      transform: scale(1.03);
+    }
+    .price {
+      font-size: 2.3rem;
+      font-weight: bold;
+      margin: 15px 0;
+    }
+    footer {
+      background: #0f172a;
+      color: white;
+      text-align: center;
+      padding: 30px 0;
+    }
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+        text-align: center;
+      }
+      .nav-links {
+        display: none;
+      }
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <div class="logo">MiMarca</div>
+        <div class="nav-links">
+          <a href="#">Inicio</a>
+          <a href="#">Características</a>
+          <a href="#">Precio</a>
+          <a href="#">Contacto</a>
+        </div>
+        <a href="#" class="btn btn-primary">Prueba gratis</a>
+      </nav>
+
+      <div class="hero">
+        <div>
+          <h1>Tu negocio digital, en una sola plataforma.</h1>
+          <p>
+            Aumenta tus ventas, automatiza procesos y crea una experiencia increíble para tus clientes.
+          </p>
+          <div class="hero-buttons">
+            <a href="#" class="btn btn-primary">Comenzar</a>
+            <a href="#" class="btn btn-secondary">Ver demo</a>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="stat">+18.4K</div>
+          <p>Usuarios activos</p>
+          <hr />
+          <div class="stat">4.9/5</div>
+          <p>Valoración media</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="features">
+      <div class="container">
+        <h2>Características principales</h2>
+        <div class="features-grid">
+          <div class="feature">
+            <div>⚡</div>
+            <h3>Rápido</h3>
+            <p>Optimizado para cargar en segundos y mejorar la experiencia.</p>
+          </div>
+          <div class="feature">
+            <div>🔒</div>
+            <h3>Seguro</h3>
+            <p>Protección y confiabilidad para tus datos y clientes.</p>
+          </div>
+          <div class="feature">
+            <div>📈</div>
+            <h3>Escalable</h3>
+            <p>Crece junto a tu negocio sin complicaciones técnicas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="pricing">
+      <div class="container">
+        <h2 style="text-align:center;">Planes</h2>
+        <div class="pricing-grid">
+          <div class="price-card">
+            <h3>Básico</h3>
+            <p>Para empezar</p>
+            <div class="price">$19<span style="font-size:1rem;">/mes</span></div>
+            <ul>
+              <li>1 sitio web</li>
+              <li>Soporte básico</li>
+              <li>Estadísticas</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Elegir</a>
+          </div>
+
+          <div class="price-card featured">
+            <h3>Profesional</h3>
+            <p>Más popular</p>
+            <div class="price">$49<span style="font-size:1rem;">/mes</span></div>
+            <ul>
+              <li>Todo lo anterior</li>
+              <li>Automatizaciones</li>
+              <li>Soporte prioritario</li>
+            </ul>
+            <a href="#" class="btn btn-primary">Elegir</a>
+          </div>
+
+          <div class="price-card">
+            <h3>Empresarial</h3>
+            <p>Para grandes proyectos</p>
+            <div class="price">$99<span style="font-size:1rem;">/mes</span></div>
+            <ul>
+              <li>Todo lo anterior</li>
+              <li>Integraciones avanzadas</li>
+              <li>Atención personalizada</li>
+            </ul>
+            <a href="#" class="btn btn-secondary">Elegir</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 MiMarca. Todos los derechos reservados.
+    </div>
+  </footer>
+</body>
+</html>
